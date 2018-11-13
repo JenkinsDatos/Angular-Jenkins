@@ -1,5 +1,5 @@
 ##STAGE 1: build Angular application ##
-FROM node:8.11 as builder
+FROM node:8 as builder
 
 COPY ./ /testapp
 
