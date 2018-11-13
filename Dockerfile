@@ -1,7 +1,7 @@
 ##STAGE 1: build Angular application ##
 FROM node:8 as builder
 
-COPY ../testapp /testapp
+COPY ./ /testapp
 
 WORKDIR /testapp
 
