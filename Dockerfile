@@ -12,5 +12,5 @@ RUN $(npm bin)/ng build
 FROM nginx
 ##
 COPY --from=builder /testapp/dist/* /usr/share/nginx/html/
-
+##
 EXPOSE 80
