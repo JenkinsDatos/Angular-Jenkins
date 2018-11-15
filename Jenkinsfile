@@ -7,7 +7,7 @@ node {
     }
     stage('docker build/push') {
      docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') {
-       def app = docker.build("11davel/v1-angular-jenkins01:${commit_id}", '.').push()
+       def app = docker.build("11davel/prueba-angular-jenkins01:${commit_id}", '.').push()
      }
    }
 }
